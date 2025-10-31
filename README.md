@@ -34,14 +34,14 @@ Room-to-room campus navigation that links building floor plans to OpenStreetMap 
 
 ## Indoor Computer Vision Pipeline
 <img width="1157" height="617" alt="Indoor Path" src="https://github.com/user-attachments/assets/4a4b94c2-f741-443d-b3d0-c7af0deb8afe" />
-1. **Crops floor plans** to the perimeter using OpenCV (scanline/contour extraction), removing legends/whitespace for efficiency.
-2. **Door detection** by `cv2.matchTemplate` with multi-angle rotations and scale grid search (e.g., `0.9/1.0/1.1`); non-maximum suppression via KD-tree to keep the best match per door.
-3. **Door removal:** converts door-arc pixels to free space to permit traversal.
-   <img width="1713" height="460" alt="Figure 32" src="https://github.com/user-attachments/assets/d1d692ea-fdcf-4a9f-94c3-a6056265bd6c" />
-5. **Entrance mapping:** detects indoor perimeter (contours), centroid alignment, area scale, IoU rotation; moves entrance markers slightly inward for robust indoor routing.
-   <img width="1545" height="923" alt="Figure 41" src="https://github.com/user-attachments/assets/7eca2a5a-2c91-4c80-a74e-beca2b555726" />
-   <img width="1077" height="817" alt="Figure 51" src="https://github.com/user-attachments/assets/b8d9c8a0-8fdc-4bd7-97f3-22c68ccf32fb" />
-   <img width="1506" height="830" alt="Figure 81" src="https://github.com/user-attachments/assets/fbfd3880-f6ad-48f7-8720-5db2be5b5b44" />
+- **Crops floor plans** to the perimeter using OpenCV (scanline/contour extraction), removing legends/whitespace for efficiency.
+- **Door detection** by `cv2.matchTemplate` with multi-angle rotations and scale grid search (e.g., `0.9/1.0/1.1`); non-maximum suppression via KD-tree to keep the best match per door.
+- **Door removal:** converts door-arc pixels to free space to permit traversal.
+  <img width="1713" height="460" alt="Figure 32" src="https://github.com/user-attachments/assets/d1d692ea-fdcf-4a9f-94c3-a6056265bd6c" />
+- **Entrance mapping:** detects indoor perimeter (contours), centroid alignment, area scale, IoU rotation; moves entrance markers slightly inward for robust indoor routing.
+  <img width="1545" height="923" alt="Figure 41" src="https://github.com/user-attachments/assets/7eca2a5a-2c91-4c80-a74e-beca2b555726" />
+  <img width="1077" height="817" alt="Figure 51" src="https://github.com/user-attachments/assets/b8d9c8a0-8fdc-4bd7-97f3-22c68ccf32fb" />
+  <img width="1506" height="830" alt="Figure 81" src="https://github.com/user-attachments/assets/fbfd3880-f6ad-48f7-8720-5db2be5b5b44" />
 
 ## Outdoor Graph & Weights
 - **Data:** buildings, entrances, roads/intersections from OpenStreetMap (exported as OSM). Edge base weight = travel time.
