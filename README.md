@@ -77,6 +77,7 @@ Room-to-room campus navigation that links building floor plans to OpenStreetMap 
     - Choose bike/walk
     - Enable safety mode
     - Incorporate weather/traffic overlays for the route
+> From the `demo` folder, launch with `python app.py` after installing all dependencies.
 
 ## Limitations & Next Steps
 - Improve door detection efficiency and fix mis-placed entrances in OSM to reduce unreachable rooms.
