@@ -53,6 +53,7 @@ Room-to-room campus navigation that links building floor plans to OpenStreetMap 
       <img width="806" height="592" alt="Figure CR" src="https://github.com/user-attachments/assets/ade961cf-39f0-40c2-8ac5-c52271d93a72" />
     - **Construction:** closures set edge weight to `∞`.
 <img width="1712" height="597" alt="Figure 61" src="https://github.com/user-attachments/assets/7d737b7f-9f3e-4e61-8b62-d4b9974387fa" />
+<img width="1107" height="847" alt="Outdoor pathfinding example" src="https://github.com/user-attachments/assets/6a3b670b-2359-4a6d-bb7c-8b8a5b96feed" />
 
 ## Traffic Model via Markov Chains
 - Builds a transition matrix over intersections.
