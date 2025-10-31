@@ -46,6 +46,8 @@ Room-to-room campus navigation that links building floor plans to OpenStreetMap 
   <img src="https://github.com/user-attachments/assets/fbfd3880-f6ad-48f7-8720-5db2be5b5b44" />
 
 ## Outdoor Graph & Weights
+<img src="https://github.com/user-attachments/assets/7d737b7f-9f3e-4e61-8b62-d4b9974387fa" />
+
 - **Data:** buildings, entrances, roads/intersections from OpenStreetMap (exported as OSM). Edge base weight = travel time.
 - **Adjustments:**
     - **Mode:** walking vs. biking multipliers.
@@ -54,7 +56,6 @@ Room-to-room campus navigation that links building floor plans to OpenStreetMap 
     - **Crime:** historical heatmap multiplier.
       <img src="https://github.com/user-attachments/assets/ade961cf-39f0-40c2-8ac5-c52271d93a72" />
     - **Construction:** closures set edge weight to `∞`.
-<img src="https://github.com/user-attachments/assets/7d737b7f-9f3e-4e61-8b62-d4b9974387fa" />
 <img src="https://github.com/user-attachments/assets/6a3b670b-2359-4a6d-bb7c-8b8a5b96feed" />
 
 ## Traffic Model via Markov Chains
